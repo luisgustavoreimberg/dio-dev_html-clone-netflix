@@ -1,0 +1,57 @@
+:root{
+    --red: #e50914;
+    --black: #141414;
+    --gray: #AAA;
+    --white: #FFF;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: var(--red);
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--gray);
+    margin-right: 0.8rem;
+    transition: 0.5s;
+}
+header nav a:hover{
+    color: var(--white);
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+.movies{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+@media (max-width: 800px) {
+    header nav{
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+    }
+}

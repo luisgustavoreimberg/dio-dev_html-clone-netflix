@@ -1,0 +1,55 @@
+:root{
+    --red: #e50914;
+    --black: #141414;
+    --gray: #AAA;
+    --white: #FFF;
+}
+
+.main-title{
+    font-size: 1.2rem;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)100%), url("../resources/img/main-title-cover.jpg");
+    min-height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    padding-bottom: 2%;
+}
+.main-title .m-title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+}
+.main-title .m-description{
+    margin-bottom: 2%
+}
+
+.button{
+    background-color: rgba(0,0,0,0.0);
+    color: var(--white);
+    border: 3px solid var(--white);
+    border-radius: 10px;
+    padding: 1% 1.5%;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.button i{
+    margin-right: 3px;
+}
+.button:hover{
+    background-color: var(--white);
+    color: var(--black);
+    cursor: pointer;  
+    letter-spacing: 1px;
+}
+
+.main-title .container{
+    padding: 2%;
+}
+
+@media (max-width: 800px) {
+    .main-title{
+        min-height: 300px;
+    }
+}
